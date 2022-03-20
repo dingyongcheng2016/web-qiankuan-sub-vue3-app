@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import { RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -22,13 +22,4 @@ const routes: Array<RouteRecordRaw> = [
   },
 ];
 
-const router = createRouter({
-  history: createWebHistory(
-    // eslint-disable-next-line
-    // @ts-ignore
-    window.__POWERED_BY_QIANKUN__ ? "/sub-app-vue3" : process.env.BASE_URL
-  ),
-  routes,
-});
-
-export default router;
+export default routes;
